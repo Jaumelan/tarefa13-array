@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organize o array</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Site para Reorganizar Números</h1>
+    </header>
+    <main>
+        <form action="#">
+            <fieldset id="userInput">
+                <legend>Ingresse os números</legend>
+                <div id="inputBox">
+                    <input type="number" name="firstNumber">
+                    <input type="number" name="secondNumber">
+                    <input type="number" name="thirdNumber">
+                    <input type="number" name="fourthNumber">
+                </div>
+                
+                <div>
+                    <button type="button" onclick="createArray();">Armazenar</button>
+                </div>
+            </fieldset>
+            <fieldset id="fieldReverse">
+                <legend>Números em ordem contrária</legend>
+                <div id="reverseBox">
+                    <span id="firstReverse"></span>
+                    <span id="secondReverse"></span>
+                    <span id="thirdReverse"></span>
+                    <span id="fourthReverse"></span>
+                </div>
+                
+                <div>
+                    <button type="button" onclick="reverseOrder();">Ordem Reversa</button>
+                </div>
+            </fieldset>
+            <fieldset id="fieldIncreasing">
+                <legend>Ordem Crescente</legend>
+                <div id="firstIncreasing"></div>
+                <div id="secondIncreasing"></div>
+                <div id="thirdIncreasing"></div>
+                <div id="fourthIncreasing"></div>
+                <div>
+                    <button type="button" onclick="increasingOrder();">Ordem Crescente</button>
+                </div>
+            </fieldset>
+        </form>
+        <script src="sorting.js" defer></script>
+    </main>
+</body>
+</html>
